@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio | Resume</title>
+
+    <!-- Google Font (same as index) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .page-title {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 32px;
+            font-weight: 600;
+            color: #343a40;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #868e96;
+            margin-bottom: 25px;
+        }
+
+        .resume-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px 18px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #212529;
+            font-size: 20px;
+            border-left: 4px solid #4c6ef5;
+            padding-left: 8px;
+        }
+
+        .timeline {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .timeline li {
+            margin-bottom: 10px;
+        }
+
+        .timeline span {
+            display: inline-block;
+            font-size: 12px;
+            color: #868e96;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 3px;
+            border-radius: 12px;
+            background: #e7f5ff;
+            font-size: 12px;
+        }
+
+        .info-line {
+            margin: 4px 0;
+        }
+
+        .info-label {
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .resume-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Resume</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="bio.html">Bio-data</a>
+    </nav>
+</header>
+
+<main>
+    <h1 class="page-title">Varsha B Gowda</h1>
+    <p class="subtitle">Aspiring Data Analyst • Computer science Student • Tech Enthusiast</p>
+
+    <div class="resume-grid">
+        <!-- LEFT COLUMN -->
+        <div>
+            <div class="card">
+                <h2>Career Objective</h2>
+                <p>
+                    To work in a challenging environment where I can apply my knowledge in
+                    web development and programming, while continuously learning and contributing
+                    to the growth of the organization.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Education</h2>
+                <ul class="timeline">
+                    <li>
+                        <strong>B.Tech in Computer Science</strong><br>
+                        Sapthagiri College of Engineering – Banglore<br>
+                        <span>2027</span>
+                    </li>
+                    <li>
+                        <strong>Higher Secondary (XII)</strong><br>
+                        Narayana PU College,State<br>
+                        <span>2023</span>
+                    </li>
+                    <li>
+                        <strong>Secondary (X)</strong><br>
+                        St Mary's Convent,State<br>
+                        <span>2021</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <strong>Personal Portfolio Website</strong> –  
+                        A multi-page responsive website built using HTML, CSS, JavaScript and jQuery.
+                    </li>
+                    <li>
+                        <strong>Simple Registration Form</strong> –  
+                        Web-based student registration form using HTML, CSS, jQuery and PHP.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div>
+            <div class="card">
+                <h2>Technical Skills</h2>
+                <div>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">jQuery</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">C / C++</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">MySQL</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Strengths</h2>
+                <ul>
+                    <li>Quick learner and hard working</li>
+                    <li>Good problem-solving skills</li>
+                    <li>Ability to work in a team</li>
+                    <li>Positive attitude and discipline</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Personal Details</h2>
+                <p class="info-line"><span class="info-label">Date of Birth:</span>01/08/2005</p>
+                <p class="info-line"><span class="info-label">Gender:</span> Female</p>
+                <p class="info-line"><span class="info-label">Languages:</span> English,Kannada</p>
+                <p class="info-line"><span class="info-label">Address:</span>479 12th main 6th A Cross AGB layout</p>
+            </div>
+
+            <div class="card">
+                <h2>Declaration</h2>
+                <p>
+                    I hereby declare that the above information is true to the best of my knowledge and belief.
+                </p>
+                <p style="margin-top:15px;">
+                    Place: Banglore<br>
+                    Date: 03/12/2025<br><br>
+                    Signature: __________________
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Varsha B Gowda. Al
