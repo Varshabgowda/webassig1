@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio | Home</title>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #4c6ef5, #15aabf);
+            color: white;
+            border-radius: 8px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .btn-container {
+            margin-top: 25px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: white;
+            color: #0b7285;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e3fafc;
+            transform: scale(1.05);
+        }
+
+        .section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            animation: slideUp 1s ease;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 id="greeting">Welcome!</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="bio.html">Bio-data</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h1>Hello, I'm <span style="color: #ffe066;">Varsha B Gowda</span></h1>
+        <p>A passionate student aiming to build a strong career in technology.</p>
+
+        <div class="btn-container">
+            <a href="resume.html" class="btn">View My Resume</a>
+            <a href="bio.html" class="btn">View My Bio-data</a>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="section">
+        <h2>About This Website</h2>
+        <p>
+            This website was created using <strong>HTML, CSS, JavaScript, and jQuery</strong>  
+            as a college assignment. It contains my resume, bio-data, and interactive features  
+            including a greeting based on the time of day and a dark mode switch.
+        </p>
+        <button id="themeBtn" class="btn" style="background:#0b7285;color:white;">Toggle Dark Mode</button>
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
